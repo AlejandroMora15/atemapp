@@ -40,7 +40,7 @@ Visit the official [React Native for Windows + macOS website](https://microsoft.
 [Check out our blog](https://microsoft.github.io/react-native-windows/blog/) if you'd like to stay up to date on the status of React Native for Windows and check out current and past roadmaps. We will post all new releases, updates and general news about the project there.
 
 ## Requirements
-You can run React Native Windows apps only on devices supported by the [Windows 10 SDK](https://developer.microsoft.com/en-us/windows/downloads).
+You can run React Native Windows apps only on devices supported by the [Windows 11 SDK](https://developer.microsoft.com/en-us/windows/downloads).
 
 For a full and detailed list of the system requirements and how to set up your development platform, see our [System Requirements](https://microsoft.github.io/react-native-windows/docs/rnw-dependencies) documentation on our website.
 
