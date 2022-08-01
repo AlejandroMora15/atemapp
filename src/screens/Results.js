@@ -27,8 +27,8 @@ export const Results = ({ route }) => {
               <DataTable.Title numeric>Score</DataTable.Title>
             </DataTable.Header>
 
-            { terms?.map( e => 
-              <DataTable.Row>
+            { terms?.map( (e, index) => 
+              <DataTable.Row key={index}>
                 <DataTable.Cell>{ e?.text }</DataTable.Cell>
                 <DataTable.Cell numeric>{ parseFloat(e?.value).toPrecision(2) }</DataTable.Cell>
               </DataTable.Row>
