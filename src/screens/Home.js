@@ -10,6 +10,7 @@ export const Home = ({navigation}) => {
 
   const handleExtract = async () => {
     const resp = await extractTerms(text)
+    console.log(resp)
     if(resp)  navigation.navigate('Results', { ...resp })
   }
 
@@ -20,7 +21,7 @@ export const Home = ({navigation}) => {
       <TextArea 
         h={40} 
         value={text} 
-        placeholder="Text" 
+        placeholder="Insert a Corpus (max length must be less than 500000 chars)" 
         onChangeText={setText}
         style={{fontSize: 17}} 
       />

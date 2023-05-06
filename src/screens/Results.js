@@ -23,13 +23,13 @@ export const Results = ({ route }) => {
         <View style={styles.container}>
           <DataTable>
             <DataTable.Header>
-              <DataTable.Title>Term</DataTable.Title>
+              <DataTable.Title >Term</DataTable.Title>
               <DataTable.Title numeric>Score</DataTable.Title>
             </DataTable.Header>
 
             { terms?.map( (e, index) => 
               <DataTable.Row key={index}>
-                <DataTable.Cell>{ e?.text }</DataTable.Cell>
+                <DataTable.Cell style={{flex: 8}}>{ e?.text }</DataTable.Cell>
                 <DataTable.Cell numeric>{ parseFloat(e?.value).toPrecision(2) }</DataTable.Cell>
               </DataTable.Row>
             )}
